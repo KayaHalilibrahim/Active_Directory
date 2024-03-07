@@ -1,0 +1,6 @@
+
+Global Catalog:
+
+- It is a database part that provides fast access to all objects (users, groups, computers, etc.) in the AD environment.
+- It facilitates information sharing among all domain names.
+- If a DC holding FSMO roles crashes, we can recover with a DC hosting the Global Catalog (GC).

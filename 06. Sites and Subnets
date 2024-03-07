@@ -1,0 +1,9 @@
+
+Sites:
+It is a structure used to optimize network traffic representing physically different locations.
+
+Subnets:
+It is associated with the site configuration in AD, allowing clients (users, PCs) to access the nearest and most suitable domain controller.
+
+
+

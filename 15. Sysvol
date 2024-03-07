@@ -1,0 +1,6 @@
+
+Sysvol:
+
+- It is present on all DCs.
+- Domains' Domain Controllers perform replication between themselves via Sysvol.
+- When client computers boot up, the group policy settings they need are retrieved via Sysvol sharing.

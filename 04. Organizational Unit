@@ -1,0 +1,7 @@
+
+Organizational Unit (OU):
+
+- It contains objects such as users, computers, and groups.
+- For example, if we have two branches in Istanbul and Ankara, we use two separate OUs for each. 
+Both contain users, PCs, and groups.
+- Group Policy rules can be applied.

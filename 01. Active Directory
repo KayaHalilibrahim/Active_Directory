@@ -1,0 +1,17 @@
+
+Active Directory:
+
+- Active Directory (AD) is a directory service designed by Microsoft to centrally manage Windows server and
+client operating systems, storing objects such as computers, users, groups, and printers.
+
+- Linux operating systems can utilize AD structure.
+- With AD, you can manage your entire infrastructure from one place.
+
+SCCM (System Center Configuration Manager):
+- It is a management service that helps manage both on-premises and cloud-based devices and users. It cannot be used without AD.
+
+Domain Controller (DC):
+- Refers to the servers where AD is installed and configured.
+
+- AD must be installed on a Windows Server operating system.
+- In an AD structure, there must be at least one DC, but there can be multiple DCs as needed.

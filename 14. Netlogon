@@ -1,0 +1,10 @@
+
+Netlogon:
+
+- It manages a computer's joining a domain, logging in, and security authentication.
+- It runs on domain controllers in the AD environment and allows users to log into computers.
+-  It is present on all DCs.
+- If we want to do something script-based.
+- If we want to apply a setting or script that affects the entire structure, we use it.
+
+

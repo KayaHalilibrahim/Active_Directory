@@ -1,0 +1,6 @@
+
+SOA (Start of Authority):
+
+- It is a DNS record containing authorization and management information for a domain name on a DNS server.
+- The name of the DC account we open with will appear.
+

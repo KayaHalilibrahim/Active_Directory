@@ -1,0 +1,6 @@
+
+RODC (Read-Only Domain Controller):
+
+- It is used in low-security level areas.
+- It is a type of domain controller located in branches or remote locations with read-only access.
+

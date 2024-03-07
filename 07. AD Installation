@@ -1,0 +1,10 @@
+
+Active Directory (AD) Installation:
+
+- It is added through "Add Roles and Features" in Server Manager.
+- Notifications
+- Promote this server to a domain controller
+- Add a new forest
+- A default site is created.
+- Forest functional level: The lowest version of DCs we will create within the forest.
+- Domain functional level: The version of the lowest DCs within the created domain.

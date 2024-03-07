@@ -1,0 +1,6 @@
+
+Checking if AD is correctly installed via DNS:
+
+- Windows -> Administrative Tools -> DNS
+- Check the files and folders under "Forward Lookup Zones."
+

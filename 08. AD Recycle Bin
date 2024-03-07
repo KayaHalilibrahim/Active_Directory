@@ -1,0 +1,6 @@
+
+AD Recycle Bin:
+
+- It requires Windows Server 2008 R2 version.
+- We can restore deleted objects in AD within 180 days.
+- If there is a DNS server in a structure, it is also a Domain Controller.
