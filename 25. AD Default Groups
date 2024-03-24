@@ -1,0 +1,23 @@
+AD Default Groups
+
+Enterprise Admins:
+- This is the most powerful group in AD (Active Directory).
+- It has authority over all domains within the forest.
+- It is the most privileged group within the forest.
+Schema Admins:
+- This group can modify the AD schema.
+- An Enterprise Admin is automatically a Schema Admin as well.
+
+Administrator:
+- Can access all controllers within the domain.
+- Usually, granting permissions to a user is done through the Enterprise or Schema Admin groups.
+- Since we create the DC with the Administrator, it is a member of all groups (Enterprise, Schema, etc.).
+
+Domain Admins:
+- Has authority only within its own domain.
+- Cannot affect other domains within the same forest.
+
+Account Operators:
+- Have specific privileges within a domain.
+- They can create, delete, and modify users.
+- They can add users to newly created groups (e.g., adding members to an accounting group), but they cannot add users to the Domain Admins group.

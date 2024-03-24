@@ -1,0 +1,22 @@
+Group Creation
+
+Groups are used to manage permissions and access rights. Instead of adding individual users to folder permissions, we add groups.
+
+Group Types:
+- Security Groups: Used for granting permissions.
+- Distribution Groups: Used only for email purposes.
+
+Group Scope:
+Domain Local:
+- If permissions are granted, they can access resources only within their own domain.
+
+Global Group:
+- If permissions are granted, they can access resources in all domains within the same forest.
+
+Universal Group:
+- Used to control access to resources across different domains.
+
+Steps:
+A - G - DL - P: Create an account - Add to global group - Add to Domain Local group - Set permissions
+                   Or
+A - G - U - DL - P: Create an account - Add to global group - Add to Universal group - Add to Domain Local group - Set permissions

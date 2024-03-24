@@ -1,0 +1,7 @@
+Organizational Units (OU)
+
+- They are structures that contain objects such as users, computers, and groups.
+- We can apply group policy settings.
+- <domainName> -> New -> Organizational Unit
+- We can create nested OUs.
+- By enabling View -> Advanced Features, we can see hidden features. This allows us to delete a protected OU in this way.

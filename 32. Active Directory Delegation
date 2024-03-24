@@ -1,0 +1,12 @@
+Active Directory Delegation:
+
+Active Directory (AD) Delegation is used when we want to grant specific permissions to a user or group for a particular group or Organizational Unit (OU) in AD.
+- We use it to grant permissions only in a specific area if we want to give a user access to create users or groups only in a specific OU, such as Ankara OU, without using the Domain Users group.
+- Delegation can be applied to OUs.
+- To delegate permissions, go to the top level of the OU, right-click, select Delegation Control, then choose the group or user.
+- After that, select the permissions you want to grant.
+
+To remove permissions:
+- First, go to View -> Advanced Features
+- Then go to the OU where you granted the permissions -> properties -> security -> advanced
+- Select the user and click "remove" to delete the permissions.

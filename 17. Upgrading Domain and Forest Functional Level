@@ -1,0 +1,18 @@
+Upgrading Domain Functional Level and Forest Functional Level:
+
+Start -> Administrative Tools -> AD Administrative Center:
+
+- <domainName> -> Raise the Forest Functional Level and Raise the Domain Functional Level
+- Start -> Administrative Tools -> AD Domain and Trust
+- Right-click on <domainName> and select Raise Domain Functional Level
+- Right-click on Active Directory Domains and Trusts and select Raise Forest Functional Level
+- You cannot raise the level if there are low-level controllers in the structure.
+- If we raise the level, we cannot revert to a lower level later.
+
+*Start -> Administrative Tools -> AD for Windows PowerShell -> Right-click and run as Administrator.
+In the command line:
+
+Get-ADForest: Get information about the forest level.
+Get-ADDomain: Get information about the domain level.
+(Get-ADDomain).DomainMode: Shows the domain mode.
+If we only upgrade the forest, the domain will automatically upgrade as well.

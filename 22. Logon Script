@@ -1,0 +1,10 @@
+Logon Script
+
+- If you want a script to run when a user starts their computer, you can use a logon script.
+- It is located in the user's properties -> profile tab.
+- It is connected to the netlogon folder.
+- The script runs every time the user logs in.
+- The script should have a .vbs extension.
+- Open Windows Run (window+r) -> go to the kaya.local domain.
+- Place the script in the netlogon folder.
+- Go to the user's properties -> profile -> logon script and write just the name of the script.

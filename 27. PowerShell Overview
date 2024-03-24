@@ -1,0 +1,24 @@
+PowerShell Overview:
+
+PowerShell is a command-line interface used for managing computers and automation tasks. It is especially useful for performing bulk operations that would be cumbersome through a graphical interface.
+
+Cmdlet:
+Cmdlets are the commands used in PowerShell.
+
+Modules:
+Modules contain cmdlets and functions.
+
+Opening PowerShell:
+- Start -> PowerShell
+- Start -> PowerShell ISE: Used for writing long scripts.
+
+Examples of PowerShell commands:
+- Get-Service: Retrieves services (similar to services.msc)
+- Get-Service -name <serviceName>: Retrieves a specific service.
+- Get-Service -name <serviceName> | Stop-Service: Stops a service.
+- Get-Service -name <serviceName> | Start-Service: Starts a service.
+- Get-ADUser -Filter *: Retrieves all users in Active Directory (AD).
+- Get-ADUser -Filter {name -like "<name>*"}: Retrieves a specific user.
+- Get-ADUser -Filter * -SearchBase "<distinguishedName>": Retrieves users or OUs at the specified address.
+- Get-ADUser -Filter * -SearchBase "<distinguishedName>" | Set-ADUser -City "<city>": Changes the city information for users at the specified address.
+- Get-Module -ListAvailable: Shows available modules in PowerShell.

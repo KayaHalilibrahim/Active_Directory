@@ -1,0 +1,26 @@
+Transferring FSMO Roles:
+
+- We use this when we want to retire old domain controllers or if we need to remove a domain controller for any reason.
+- The transfer process is carried out on the machine where the roles will be transferred to.
+
+On the command line of the PC to be transferred:
+- netdom query fsmo: Shows which DC holds the FSMO roles.
+
+For transferring RID, PDC, and infrastructure roles:
+Navigate to Tools -> AD Users and Computers -> Domain -> Operations Master.
+
+For transferring Domain Naming Master:
+Navigate to AD Tools -> AD Domain and Trust -> Operations Master.
+
+For transferring Schema Master:
+1. Open cmd as an administrator.
+2. Register the DLL: `regsvr32 schmmgmt.dll`.
+3. Press Windows + R, type `mmc`, and press Enter.
+4. Go to File -> Add or Remove Snap-ins -> Active Directory Schema -> Add.
+5. In Active Directory Schema, go to Operations Master.
+If the DC you want to transfer to is not listed because it's the same as the current one:
+- Change the Active Directory Domain Controller to the desired DC.
+- In Active Directory Schema -> Operations Master -> Change.
+
+After these operations, AD replication is necessary:
+- Go to AD Sites and Services -> Sites -> Default-First-Site-Name -> NTDS Settings (where the FSMO roles were transferred) -> Replicate Now.

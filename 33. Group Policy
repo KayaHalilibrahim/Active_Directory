@@ -1,0 +1,24 @@
+GROUP POLICY:
+
+Group Policy allows us to configure settings for users and computers in Active Directory (AD).
+- It is used for making bulk configuration changes on users and computers.
+- It is applied for a group of settings collectively.
+- We use Group Policy Management in AD for managing group policies.
+
+By default, AD comes with two group policies:
+1. Default Domain Controllers Policy: This is crucial for password policy settings.
+2. Default Domain Policy
+
+Group Policy settings include:
+1. Computer configuration
+2. User configuration
+
+- Group Policy settings are applied every 90-120 minutes.
+- To apply Group Policy changes immediately on client computers, open Command Prompt and use the command:
+gpupdate /force
+
+- The Group Policy settings we configure apply to the local settings of all computers:
+To access local security policies on a computer, use Windows + r and type gpedit.msc.
+
+Account Lockout Policy Settings:
+These settings include configurations that users should pay attention to when logging in.

@@ -1,0 +1,16 @@
+IFM (Install from Media):
+
+- During the installation of an Additional Domain Controller (DC), the initial replication can take a long time (there could be thousands of users or computers).
+- We can speed up replication by preparing and providing a media-like representation of the replication.
+- Use the following steps with ntdsutil:
+  - Open ntdsutil.
+  - Activate instance ntds.
+  - Use the "ifm" command to prepare the IFM media.
+  - Create the Sysvol directory: `create sysvol c:\IFM`.
+  - Quit ntdsutil.
+- Copy the IFM media to the target server, typically under `<ComputerName>\c:\`.
+- Proceed with promoting this server to a domain controller during the installation.
+- To ensure that replication processes from one DC are visible on other DCs, use the command: `repadmin /syncall`.
+
+To determine from which DC a user's computer is being opened:
+- Use the command `nltest /sc_query:<DomainName>`.

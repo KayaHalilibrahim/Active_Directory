@@ -1,0 +1,9 @@
+Bridgehead Server:
+
+- Within sites, there can be multiple DCs, and when the replication queue comes, multiple DCs try to replicate with other sites, which can lead to complexity. To avoid this complexity, we designate a DC responsible for replication. Replication operations occur through this DC.
+
+Setting Up a Bridgehead Server:
+- AD Administrative Tools -> AD Sites and Services -> Select the site -> Properties -> General -> IP -> Add
+
+Using Command Line:
+- repadmin /syncall -> Instead of performing replication individually, we can also do it this way.

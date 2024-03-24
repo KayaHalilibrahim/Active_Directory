@@ -1,0 +1,17 @@
+OPERATIONS MASTERS:
+
+- If the first DC we install crashes, the structure may not function properly.
+- Also known as FSMO (Flexible Single Master Operation) roles.
+- In an AD structure, there are 2 forest-based and 3 domain-based FSMO roles, totaling 5 FSMO roles.
+- The schema master and domain naming master are located in the root domain.
+
+FSMO ROLES:
+- Schema master
+- Domain naming master
+- PDC master
+- RID master
+- Infrastructure master
+
+- `netdom query fsmo`: Displays machines hosting FSMO roles. Migration can be performed.
+- They are generally found on the machine where we initially installed them by default.
+- While we can distribute these roles, they are typically kept on a single machine for security reasons.

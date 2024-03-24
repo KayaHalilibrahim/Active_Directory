@@ -1,0 +1,19 @@
+Home Folder Mapping:
+
+- We use mapped folders for folders that we don't want to lose access to over the network.
+- After creating the folder, we grant access to the user we want to access it.
+- The user with access can create a drive on their computer using This PC -> Map network drive and access the folder by entering its path.
+- However, this can only be done on the PCs we have granted permission to.
+
+Home Folder:
+
+- It is commonly used for corporate data.
+- Go to the user's profile on the server.
+- Click on Connect.
+- Enter \\<ipAddress>\<folderName>\%username% as the path.
+- %username% allows each PC to create its own folder with its username.
+
+Creating Users with Similar Properties:
+
+- To create a user with similar properties to an existing user, we can copy the user we created earlier.
+- They will be in the same groups and have the same permissions.

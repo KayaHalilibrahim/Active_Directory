@@ -1,0 +1,29 @@
+Active Directory Management Tools:
+
+Start -> Administrative Tools -> AD Users and Computers:
+
+*Domain Controllers:
+- It shows the domain controller in the structure.
+
+*Computers:
+- It shows the computers joined to the domain.
+
+Start -> Administrative Tools -> AD Administrative Center:
+- If you have activated the AD recycle bin in the structure, you can recover deleted objects here.
+- We can perform search operations here.
+- We can reset the password of any user.
+
+Start -> Administrative Tools -> AD Sites and Services:
+- If there are multiple DCs in the structure, replication operations or operations with sites are performed here.
+- We can determine if our DC is in the global catalog through "NTDS Settings".
+- We can create a new site.
+
+Start -> Administrative Tools -> AD Domain and Trust:
+- It is used to create trust between two different forests.
+
+Start -> Administrative Tools -> AD Module for Windows PowerShell:
+- It manages AD through the command line.
+
+Start -> Administrative Tools -> AD Group Policy Management:
+- It is used to create group policies.
+- Permissions on the domain are managed from here.

@@ -1,0 +1,8 @@
+GPRESULT:
+
+- The gpresult command is used to check whether a computer or user has received and applied group policy settings.
+- gpresult /r: Shows only the group policy settings applied on the computer.
+- gpresult /r user:<domain>\<username>: Shows the group policy settings applied on both the computer and the user.
+- gpresult /h c:\Users\o.saygin\Desktop\rapor.html /user:kaya\o.saygin: Generates a report in HTML format for the specified user.
+- In Group Policy Management, we can use the Group Policy Results Wizard to generate reports about specific users (group policy result wizard).
+- To examine and see which groups or users have received and applied specific group policy settings, we can click on the desired object under Group Policy Objects and then navigate to settings to view the details.

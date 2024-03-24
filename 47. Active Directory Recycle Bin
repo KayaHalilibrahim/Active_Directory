@@ -1,0 +1,16 @@
+Active Directory Recycle Bin:
+
+The Active Directory Recycle Bin allows deleted objects (users, groups, computers, etc.) to be retained for 180 days before being permanently removed.
+
+Enabling the Recycle Bin:
+1. Open AD Administrative Center from AD tools.
+2. Select the domain name.
+3. Enable the recycle bin feature.
+
+Restoring a Deleted User:
+1. Open AD Administrative Center from AD tools.
+2. Navigate to Deleted Objects.
+3. Select the deleted user you want to restore.
+4. Choose the option to restore the user.
+
+By following these steps, you can enable and utilize the Active Directory Recycle Bin to recover deleted objects within the retention period.

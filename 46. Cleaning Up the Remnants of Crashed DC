@@ -1,0 +1,11 @@
+Cleaning Up the Remnants of Crashed DC:
+
+1. Open Active Directory Sites and Services.
+2. Delete the NTDS Settings under the crashed DC.
+3. In DNS, clean up the Name Server (NS) record of the crashed DC:
+   - Navigate to <DomainName> -> Properties -> Name Server, then delete the record of the crashed DC.
+   - Similarly, go to msdcs.<domainname> -> Properties -> Server Name, and delete the record of the crashed DC.
+4. Review other folders and delete any folders associated with the crashed DC.
+5. Navigate to the _msdcs folder:
+   - Open Properties -> Remove <crashed DC>, then add <working PC Name>.<domainName>.local.
+By following these steps, you can clean up the remnants of the crashed DC.

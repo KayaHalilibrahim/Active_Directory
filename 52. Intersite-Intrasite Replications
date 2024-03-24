@@ -1,0 +1,17 @@
+Intersite-Intrasite Replications:
+
+Intrasite replications refer to the replication done within the same site.
+
+Intersite replications refer to the replication done between sites.
+
+- There is a specific time delay for changes made in one site to be applied in another site, known as replication latency. This latency can be seen in AD Sites and Services -> IP -> Link -> Properties.
+- We can modify this time delay (minimum is 15 minutes).
+
+If we want changes made in one site to be immediately replicated to another site, we need to perform manual replication.
+- Go to Sites -> Select the site -> NTDS Settings -> All Tasks -> Replicate Now.
+
+About Sites and Site Links:
+- When we create a site, it asks for a site link. We can add a site link by going to "AD Tools -> AD Sites and Services -> Sites -> IP -> New" and adding the site link.
+
+SiteLink Cost:
+- When there are multiple paths from one site to another, the path with a lower cost value is preferred.

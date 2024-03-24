@@ -1,0 +1,14 @@
+Trust Creation:
+
+- First, ensure that the entities can communicate with each other.
+- Go to AD Administrative Tools -> AD Domain and Trust -> domain -> trust -> new trust.
+
+Commands:
+- ipconfig /flushdns: Clears the client resolver cache, removing entries stored in the client's cache.
+- ipconfig /displaydns: Shows the entries stored in the client's cache, which are typically websites visited by the client.
+
+Forest-wide Authentication:
+- Allows authentication across the entire forest.
+
+Selective Authentication:
+- Provides the ability to specify which users or groups from a trusted domain can authenticate against resources in the trusting domain.

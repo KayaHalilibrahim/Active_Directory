@@ -1,0 +1,13 @@
+Bulk User Creation On PowerShell:
+
+Open powershell -> 
+
+Import-Csv C:\csvUsers.csv -Delimiter "," | foreach{
+    New-ADUser -GivenName $_.FirstName -Surname $_.LastName -Name $_.FullName -DisplayName $_.FullName `
+    -SamAccountName $_.SAM2 -UserPrincipalName $_.UPN -AccountPassword `
+    (ConvertTo-SecureString -AsPlainText "K4y4S972" -Force) -ChangePasswordAtLogon $true -Enabled `
+    $true -Path "ou=istanbulUsers,ou=istanbulOU,ou=Organizasyonlar,dc=kaya,dc=local"
+}
+
+
+This script imports data from the CSV file located at "C:\csvUsers.csv" using comma (,) as the delimiter. It then creates new AD users based on the information in the CSV file, including their first name, last name, full name, SAM account name, user principal name (UPN), password, and organizational unit (OU) path.

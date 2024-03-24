@@ -1,0 +1,17 @@
+Roaming Profiles:
+
+- User profiles are by default stored under C:\Users on each user's computer.
+- Profile documents are located here.
+- Profile documents contain users' documents and created files.
+
+- If a user wants to see their profile on all computers they have logged into, they should use Roaming Profiles.
+
+- Create a folder named Profiles under the C drive.
+- Then go to the user's profile on the server:
+
+Profile path: \\<ipAddress>\profiles\%username%
+
+- Instead of %username%, we can also use the name directly, but this can cause issues if there are multiple names.
+- We can use the computer name instead of the IP address, but using the IP address is better.
+
+-m.kaya.V6: Indicates that the computer is running Windows 10.

@@ -1,0 +1,8 @@
+ADDITIONAL DC INSTALLATION:
+
+- By setting up an Additional Domain Controller (DC), you can ensure continuity in case your primary infrastructure fails.
+- To set up an Additional DC, you first install a server machine and configure its name and network settings, then join it to the domain.
+- Start by selecting "Add Roles and Features" and install Active Directory (AD).
+- Next, promote this server to a domain controller.
+- Choose "Add a domain controller to an existing domain."
+- If a machine is a DC, it also functions as a DNS server simultaneously.

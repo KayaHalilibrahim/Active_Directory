@@ -1,0 +1,16 @@
+Installation of Windows Server Backup Tool:
+
+The Windows Server Backup tool is a built-in backup utility found in Windows server operating systems. It can be used for all servers.
+
+To install:
+Navigate to DC -> add roles and features -> features -> windows server backup -> install.
+
+Preparation Before Backing Up
+- Check if there is replication between domain controllers.
+
+Backing Up Data
+- Use the Windows Server Backup tool.
+- If you want to schedule backups at specific intervals, use the Backup Schedule feature.
+- For backing up only AD, use the System State backup option.
+
+For a comprehensive backup, including everything under the C drive, system requirements, and necessary components for Domain Controller and AD, use the Bare Metal Recovery option.

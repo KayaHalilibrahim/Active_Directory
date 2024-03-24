@@ -1,0 +1,21 @@
+SCHEMA MASTER:
+
+- Manages the Active Directory schema.
+- Stores AD classes and attributes.
+- Can be thought of as a template.
+
+DOMAIN NAMING MASTER:
+- Responsible for adding new domains to our forest or removing existing ones.
+
+PDC EMULATOR:
+- Handles password changes.
+- Responsible for time synchronization within the structure and group policy updates.
+
+RID MASTER:
+- Ensures each object in AD has a unique identifier (SID).
+- Every object we create has a SID value.
+- Prevents duplicate SID values.
+
+INFRASTRUCTURE MASTER:
+- Handles the task of updating references between related objects and properties.
+- For example, if we move a user from one OU to another, the distinguishedName changes.

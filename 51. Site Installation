@@ -1,0 +1,8 @@
+Site Installation: 
+
+- Open Active Directory Administrative Tools -> Sites -> New Site.
+- Connect sites in Active Directory using site links.
+- In older setups, replication between DCs could be done via SMTP.
+- However, nowadays, transport is done over IP.
+- Subnet settings are crucial in determining which DC a request should go to, so IP blocks are entered.
+- When creating a new site, don't forget to add IP blocks to the subnet.

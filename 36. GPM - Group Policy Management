@@ -1,0 +1,27 @@
+GPM - Group Policy Management:
+
+GPM INHERITANCE, ENFORCE, DISABLE
+Inheritance:
+- Group policy settings follow a top-down inheritance. This means that settings applied at the domain level are inherited by OUs below.
+
+To remove inheritance from the domain level:
+- Right-click on the OU and select "Block Inheritance." This prevents settings applied at the domain level from affecting the OU.
+
+Enforce:
+- Use "Enforce" when you want a change to be enforced even if there are conflicting settings or lower-level policies that might not accept the change.
+- Right-click on the setting and choose "Enforce" to apply this.
+
+To disable a GPM setting:
+- Select the setting and then click on "Details" to disable it.
+
+GPM DELEGATION
+- After applying a setting to an OU, we use delegation to remove that setting from a specific object within the OU.
+
+Authenticated Users: Represents everyone.
+- If within an OU, it represents everyone in that OU.
+
+Steps for delegation:
+- Select the setting.
+- Go to delegation.
+- Add the username (the user for whom you want to remove the setting).
+- Apply group policy and set it to "deny."

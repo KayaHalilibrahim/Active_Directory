@@ -1,0 +1,15 @@
+LOCAL GROUPS
+
+- On a client PC, go to Computer Management.
+- Local users and groups are not available on a DC (Domain Controller).
+- You can create a new user by selecting "New Users."
+- When you join a machine to the domain, the domain users group on the domain becomes a member of the local users group on that machine.
+- If you make a user a member of the Domain Admins group on the DC, they become an Administrator on their own computer.
+
+To make a user an admin on their own computer:
+- We make these users local admins on their machines.
+- To make someone a local admin, you need to log in with an authorized user.
+- To make someone a local admin:
+  - On the client PC, go to "Computer Management" -> "Local Users and Groups" -> "Groups" -> "Add."
+- The user becomes an authorized user on their own machine.
+- This process can also be done using DC policy.

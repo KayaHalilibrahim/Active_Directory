@@ -1,0 +1,35 @@
+Creating Group Policy:
+
+- You need to be a member of the minimum group policy creator owner group.
+
+Opening a Port on the Firewall:
+- Open Group Policy Management.
+- Go to Group Policy Objects, where all group policy settings are located.
+- Click on "New," enter a name, then edit settings for user/computer.
+- Navigate to Windows Security > Windows Firewall with Advanced Security > Inbound > New:
+  - Select the port and specify its details.
+
+Applying the Group Policy:
+- Go to the Domain or OU where you want to apply the policy.
+- Select "Link an Existing GPO" and choose the group policy you created.
+- You can also drag and drop the policy.
+
+Updating Group Policy on Client Computers:
+- Right-click on the OU and select "Group Policy Update" to ensure client computers get the updated policy. (This cannot be done at the domain level.)
+
+Managing Group Policy:
+- Use Group Policy Management to access Computer Configuration > Preferences > Local Users and Groups to manage local groups on computers.
+
+Default Behavior:
+- By default, any user can join a computer to the domain up to 10 times without being a Domain Admin.
+
+Delegating Control:
+- Use delegation to grant a user without privileges the ability to join an unlimited number of computers to the domain:
+  - Right-click on the Domain Name > Delegate Control > Add the group > Select "Join a computer to the domain" option.
+
+Making a User a Local Administrator on Their Computer:
+- Open Group Policy Management and edit the necessary settings.
+- Navigate to Computer Configuration > Local Users and Groups > New Local Group.
+  - Create a group named "Administrator" and add the user to it.
+- This grants local admin privileges to the user on all computers.
+- Additionally, you can use item-level targeting for specific computers by specifying their names.

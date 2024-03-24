@@ -1,0 +1,18 @@
+Remote Administration Tools:
+
+Remote Desktop
+- Connection is established using port 3389.
+- It's important to enable this on the devices you want to connect to, especially on servers.
+
+To connect using Remote Desktop:
+- Go to system -> system properties -> allow remote connections.
+- Administrative rights are required for Remote Desktop.
+- On the device you want to connect to, press Windows+R, type "mstsc" to run the command.
+- Connect using the name or IP address.
+- Sign out after finishing your work.
+
+Remote Server Administration Tools (RSAT)
+- Used for tasks like creating users and changing passwords, primarily for Account Operators who have specific permissions.
+- In cmd, type "whoami /groups" to see the user and the groups they belong to.
+- RSAT needs to be installed.
+- With RSAT, you can create users without using Remote Desktop for connection.

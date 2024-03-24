@@ -1,0 +1,13 @@
+To create a user in Active Directory using PowerShell:
+
+1. Open PowerShell ISE.
+2. Paste the following command:
+
+```powershell
+New-ADUser -GivenName Erdem -Surname Dikmeci -Name "Erdem Dikmeci" -DisplayName "Erdem Dikmeci" `
+-SamAccountName e.dikmeci -UserPrincipalName e.dikmeci@kaya.local -AccountPassword `
+(ConvertTo-SecureString -AsPlainText "K4y4S972" -Force) -ChangePasswordAtLogon $true -Enabled `
+$true -Path "ou=istanbulUsers,ou=istanbulOU,ou=Organizasyonlar,dc=kaya,dc=local"
+```
+
+Note: The backtick (`) is called an accent mark and is used to split the command into multiple lines for readability in PowerShell ISE.

@@ -1,0 +1,13 @@
+User Principal Name (UPN)
+
+- Example: hkaya@ogr.bandirma.edu.tr
+- hkaya: UPN Prefix
+- ogr.bandirma.edu.tr: UPN Suffix
+
+- hkaya -> I am a Student
+- @ -> at
+- ogr.bandirma.edu.tr -> Banu
+
+SAM Account Name:
+- It can be used to enter the user's SAM account name.
+- -> hkaya

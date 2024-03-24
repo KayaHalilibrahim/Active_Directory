@@ -1,0 +1,21 @@
+One-way Trust:
+- It is used when one-way access is required.
+- The trust direction is opposite to the access direction.
+- Trusting: the trusting domain or forest.
+- Trusted: the trusted domain or forest.
+
+Two-way Trust:
+- It is used when two-way access is required.
+
+1. External Trust:
+- It is used for communication between two different domains in different forests.
+
+2. Shortcut Trust:
+- It is used for faster communication between two domains in the same forest.
+
+3. Forest Trust:
+- It is established when two different forests need complete access to each other.
+- In a forest trust, domains on both sides can access each other's domains.
+
+4. Realm Trust:
+- It is a type of trust established between an AD structure and another structure, such as Linux.

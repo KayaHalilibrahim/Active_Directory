@@ -1,0 +1,8 @@
+Adding a Computer to the Domain:
+
+- Right-click on this computer -> Properties -> Enter the domain name.
+- Log in by entering the domain/username and password.
+- The server automatically registers its hostname via DNS.
+- If we add a new user to the domain, they will automatically register in the Computers OU unit.
+- However, if we create a computer that will join the domain in the OU we created:
+  "New -> Computer -> <computerName>", the computer registered with <computerName> will be directly registered in that OU.

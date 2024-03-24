@@ -1,0 +1,15 @@
+Seizing Operations Master Roles:
+
+- If a DC crashes and there is no backup, we need to seize the Operations Master roles (FSM).
+
+On the command line:
+- Open `ntdsutil`.
+- Type `roles` (should show `ntdsutil:`).
+- Type `connections` (should show `fsmo maintenance:`).
+- Connect to the server using `connect to server <DCName>` (replace `<DCName>` with the name of the working DC).
+- Type `quit` to go back to the previous page.
+- Use `seize pdc` to seize the PDC Emulator role (should show `fsmo maintenance:`).
+- Use `seize RID Master` to seize the RID Master role.
+- Use `seize infrastructure master` to seize the Infrastructure Master role.
+- Use `seize schema master` to seize the Schema Master role.
+- Use `seize naming master` to seize the Domain Naming Master role.

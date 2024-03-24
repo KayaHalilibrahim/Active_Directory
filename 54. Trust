@@ -1,0 +1,4 @@
+Trust:
+
+- We use AD Trust structure to share resources between two different forests.
+- Example scenarios include collaborating on a common project or acquiring a forest. It also allows moving users or computers from one forest to another.

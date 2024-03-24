@@ -1,0 +1,13 @@
+Active Directory Site Concept:
+
+- Sites contain DCs (Domain Controllers).
+- Used to prevent network fragmentation.
+- It's based on physical locations in the network.
+- For example, different office buildings or geographical locations of a company can each form a site.
+
+Making a Server a Router:
+- First, create two switches and configure the settings for routing in the routing device.
+- You need two internet adapters.
+- Open Server Manager -> Add Roles and Features -> Remote Access -> Routing -> Install -> Restart.
+
+Go to Start -> Windows Administrative Tools -> Routing and Remote Access -> Routing (local) -> Configure and Enable Routing and Remote Access -> Custom Configuration -> LAN Routing -> Finish.

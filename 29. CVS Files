@@ -1,0 +1,7 @@
+CSV FILES WORKING:
+
+- Csv (Command Separated Values) files: values separated by commas
+- We use CSV files when we want to create users in bulk.
+- We can do it with Excel.
+Save it with .csv extension.
+- The header includes firstName, surName, fullName, SAM, SAM2, and UPN.

@@ -1,0 +1,21 @@
+Metadata Cleanup:
+
+- Used to remove traces of unused DCs and clean up the metadata in the database of the DC from which FSMO roles were seized.
+- Also used to sever connections between the crashed DC and other DCs.
+- For example, if the crashed DC still appears in the Domain Controller, we use this tool.
+
+Steps for Metadata Cleanup:
+1. Open `ntdsutil`.
+2. Type `metadata cleanup`.
+3. Enter `connections`.
+4. Connect to the working DC using `connect to <DCName>`.
+5. Type `quit`.
+6. Select the operation target.
+7. List the domains using `list domain`.
+8. Select the domain using `select domain <number>`.
+9. List the sites using `list sites`.
+10. Select the site using `select site <number>`.
+11. List the servers in the site using `list server in site`.
+12. Select the server that is not working or has crashed using `select server <number>`.
+13. Type `quit`.
+14. Remove the selected server using `remove selected server`.

@@ -1,0 +1,38 @@
+Windows Services Restore Mode:
+
+To perform recovery, the computer needs to be opened in restore mode. If you don't know the restore mode password, you'll need to reset it:
+- Open cmd and type: ntdsutil -> set dsrm password -> reset password on server <computerName>
+- Enter a new password
+- Quit
+
+Open the Windows Server Backup tool and select recover.
+
+To open in Restore Mode:
+- Go to start -> run -> msconfig -> boot -> safe boot -> Active Directory repair (restore mode) -> restart
+
+Log in with .\administrator to access the admin account in restore mode.
+
+In the Windows Server Backup tool, select local backup -> recover -> system state.
+
+After restoring, other DCs will transfer updated information to the restored DC.
+
+Authorization Restore:
+- If you want the restored DC to have priority over other DCs, use authorization restore.
+- Go to msconfig -> boot -> safe mode -> AD repair -> log in with .\administrator.
+- In Windows Server Backup, select local backup -> recover -> select backup -> system state -> perform an authoritative restore of Active Directory files in the original location -> complete recovery.
+
+Open cmd as an Administrator and enter:
+- ntdsutil
+- activate instance ntds
+- authoritative restore subtree <distinguishedName>: To recover an OU and all objects underneath by increasing version numbers.
+
+For restoring a single object:
+- authoritative restore object <distinguishedName>
+- Quit (q)
+- Q
+
+In msconfig, go to general -> normal start (boot -> remove safe mode).
+
+Full Restore:
+- If the DC cannot be opened at all and you have a full backup, perform a full restore.
+- Create a new virtual machine and restore the backup to this machine.

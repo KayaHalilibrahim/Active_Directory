@@ -1,0 +1,5 @@
+RPDC (Read-Only Domain Controller):
+
+Read-Only Domain Controllers (RODCs) are a type of domain controller in the Active Directory environment that only performs queries and reads data. RODCs are typically used to provide Active Directory services for local users in an insecure or less powerful network environment.
+
+They only receive and store information for users and data that we specifically allow access to. This limited functionality enhances security by reducing the risk of unauthorized access or data modifications in scenarios where network security is a concern.

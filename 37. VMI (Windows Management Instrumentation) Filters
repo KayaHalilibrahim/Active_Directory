@@ -1,0 +1,31 @@
+VMI (Windows Management Instrumentation) Filters:
+
+- We use VMI filters to filter group policy settings.
+Example:
+- If we want to apply a group policy setting only to computers running Windows 10 or computers with Lenovo brand, we use VMI filters.
+
+The syntax is similar to SQL query syntax.
+
+- On live.sysinternals.com, you can find useful small programs (e.g., programs that convert physical machines to virtual machines).
+- Download Bginfo.exe.
+- In Bginfo:
+  - Go to Custom -> New -> VMI Query.
+  - Enter the properties.
+
+For VMI filters:
+- Go to VMI filters -> New.
+- Enter the Active Directory (AD) details.
+- Add queries.
+Example query: `select * from Win32_OperatingSystem where Caption like "%Windows 10%"`
+
+The `%` symbol means anything can come before or after.
+
+- VMI filters are applied to group policy object links.
+- Select the link.
+- At the bottom, find VMI filtering.
+Only one VMI filter can be applied to a GP object link.
+
+GPM OBJECTS BACKUP & RESTORE
+- To backup a group policy object, go to the group policy object and select Backup.
+- You can then import this backup to another machine.
+- To restore, use GP Objects -> Manage Backups.
